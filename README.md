@@ -1,3 +1,10 @@
+EIP712: 根据合约的作用域domain和需要参与签名的数据以及类型进行链下签名，然后将获取签名结果以及需要参与签名的数据传到线上合约进行签名验证，验证是否是由该address的签名，这样可以节省交易手续费，将授权交易合并到一笔交易当中。 (链下签名可以将交易 gas 成本从用户转移到服务提供商)
+
+域分隔符(domain separator)：主要是防止一个Dapp的签名还能在另外一个Dapp中工作，从而导致签名冲突。
+
+
+
+
 # ERC20 Permit
 
 This project is an implementation of an ERC2612 enabled ERC20 token.
